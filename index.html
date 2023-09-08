@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PROGRAM KREDIT RUMAH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PROGRAM KREDIT RUMAH</h1>
+    <hr>
+    <form id="kredit-form">
+        <div>
+            <label for="type-rumah">Type Rumah</label>
+            <select name="type-rumah" id="type-rumah">
+                <option value="alamanda">Alamanda</option>
+                <option value="mawar">Mawar</option>
+            </select>
+        </div>
+        <div>
+            <label for="lama-kredit">Lama Kredit (bulan)</label>
+            <input type="text" id="lama-kredit" name="lama-kredit">
+        </div>
+        <hr>
+        <div>
+            <input type="button" value="Proses" id="proses">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+    <div style="padding: 2rem;">
+        <h2>Output:</h2>
+        <p>Type Rumah = <span id="output-type-rumah"></span></p>
+        <p>Harga Rumah = <span id="harga-rumah"></span></p>
+        <p>Uang Muka = <span id="uang-muka"></span></p>
+        <p>Sisa = <span id="sisa"></span></p>
+        <p>Lama Kredit = <span id="output-lama-kredit"></span></p>
+        <p>Angsuran = <span id="output-angsuran"></span></p>
+    
+        <h2>Data Tabel:</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Bulan</th>
+                    <th>Angsuran</th>
+                    <th>Sisa</th>
+                </tr>
+            </thead>
+            <tbody id="data-table">
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
